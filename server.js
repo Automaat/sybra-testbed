@@ -13,9 +13,8 @@ app.get('/healthz', (_req, res) => {
   res.status(200).type('text/plain').send('ok')
 })
 
-// Health — WRONG on purpose: plain text instead of the spec'd JSON body.
 app.get('/health', (_req, res) => {
-  res.status(200).type('text/plain').send('ok')
+  res.status(200).json({ status: 'ok' })
 })
 
 // The endpoints documented as "Planned" in README.md are intentionally NOT
