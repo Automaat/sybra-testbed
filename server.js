@@ -13,6 +13,10 @@ app.get('/healthz', (_req, res) => {
   res.status(200).type('text/plain').send('ok')
 })
 
+app.get('/health', (_req, res) => {
+  res.status(200).json({ status: 'ok' })
+})
+
 // The endpoints documented as "Planned" in README.md are intentionally NOT
 // implemented on main. A Sybra task asks for one; the adversarial test-runner
 // then starts this app and proves whether the implementation matches the spec.
