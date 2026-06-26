@@ -84,3 +84,6 @@ sybra-cli handoff --stage testing --project Automaat/sybra-testbed \
 tail -f ~/.sybra/logs/sybra.log
 sybra-cli get <task-id>          # status + verdict routing
 ```
+
+## Notes
+Docs-only change; no runtime behavior.
