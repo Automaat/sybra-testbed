@@ -1,0 +1,4 @@
+# Toolchain bootstrap Sybra runs in each worktree before an agent starts.
+# Kept minimal on purpose: this repo exists to exercise Sybra's testing phase.
+setup:
+  - npm install
