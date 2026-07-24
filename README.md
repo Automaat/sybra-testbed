@@ -23,11 +23,6 @@ can boot it in seconds on any free port.
 ### Present on `main`
 - `GET /` → `200`, `text/plain`, body `sybra-testbed ok`
 - `GET /healthz` → `200`, `text/plain`, body `ok`
-
-### Planned (NOT implemented on `main`)
-These are the spec a Sybra task implements. The test-runner checks an
-implementation against exactly this:
-
 - `GET /health` → `200`, `application/json`, body `{"status":"ok"}`
 - `GET /sum?a=<int>&b=<int>` → `200`, `application/json`, body `{"result":<a+b>}`;
   missing/non-integer params → `400` `{"error":"a and b must be integers"}`
